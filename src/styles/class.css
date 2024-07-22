@@ -1,0 +1,31 @@
+.notes-block {
+    border-radius: 0rem 4rem 0rem 4rem;
+}
+
+.notes-block {
+    transition: 0.3s;
+}
+
+.notes-block:hover {
+    transform: scale(1.04);
+    z-index: 2;
+}
+
+.increase-z {
+    z-index: 1;
+}
+
+.note-list {
+    transition: 0.3s;
+}
+
+.note-list li:hover {
+    transform: translateX(3%);
+}
+
+.notes-block-subject:hover {
+    transform: scale(1.1);
+}
+
+
+/* Quiz */

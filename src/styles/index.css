@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide-scrollbar::-webkit-scrollbar {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Navbar  */
+.nav-btns {
+    border-radius: 0rem 1rem 1rem 0rem;
+    border-width: 2px 2px 2px 0px;
+}
+
+.options-close .div {
+    transition: all 2s;
+}
+
+.options-close {
+    display: none;
+}
+
+.options-open {
+    display: block;
+}
+
+
+
+
+
+
+/* Class drowdown */
