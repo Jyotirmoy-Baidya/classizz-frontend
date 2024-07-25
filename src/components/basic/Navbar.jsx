@@ -5,6 +5,8 @@ import { useNavContext } from '../../context/NavContext';
 import { useClassContext } from '../../context/ClassContext';
 const HomeNavItems = [{ name: "OwnClasses", href: "/h/o" }, { name: "Institutes", href: "/h/s" }, { name: "Joined", href: "/h/e" }];
 const ClassNavItems = [{ name: "Announcements", href: "/cls/a" }, { name: "Notes", href: "/cls/n" }, { name: "Quiz", href: '/cls/q' }, { name: "Members", href: "cls/m" }];
+
+const QuizNavItems = [{ name: "Create Quiz", href: "/createquiz" }]
 const StudentAddClass = [{ name: "Join Class" }]
 
 const Navbar = () => {
@@ -27,10 +29,16 @@ const Navbar = () => {
                             ClassNavItems.map((ele, i) => (
                                 <NavButtons href={ele.href} name={ele.name} key={i} type={"Class"} />
                             ))
-                        ) : <></>
+                        ) :
+                            navSelection === 'createquiz' ? (
+                                QuizNavItems.map((ele, i) => (
+                                    <NavButtons href={ele.href} name={ele.name} key={i} type={"Class"} />
+                                ))
+                            ) :
+                                <></>
                 }
             </div>
-        </div>
+        </div >
     )
 }
 

@@ -14,6 +14,7 @@ import Notes from "./pages/class/Notes"
 import Quizes from "./pages/class/Quizes"
 import Signup from "./pages/Signup"
 import Members from "./pages/class/Members"
+import CreateQuiz from "./pages/CreateQuiz"
 
 const App = () => {
   const [pop, setPop] = useState(0);
@@ -36,6 +37,8 @@ const App = () => {
                 <Route path="n/:id" element={<Notes />} />
                 <Route path="q/:id" element={<Quizes />} />
                 <Route path="m/:id" element={<Members />} />
+              </Route>
+              <Route path='/createquiz' element={<CreateQuiz />} >
               </Route>
               <Route path="*" element={<Revert />} />
               <Route path='/signup' element={<Signup />} />

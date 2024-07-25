@@ -11,7 +11,25 @@ export const color = [
     { bg: 'bg-orange-100', border: 'border-orange-300', span: 'bg-orange-300' },
     { bg: 'bg-purple-100', border: 'border-purple-300', span: 'bg-purple-300' },
     { bg: 'bg-sky-100', border: 'border-sky-300', span: 'bg-sky-300' },
+]
 
+export const ownClasses = [
+    { className: 'CSE1', c: 0, code: '123' },
+    { className: 'CSE2', c: 1, code: '343' },
+    { className: 'CSE3', c: 2, code: '163' },
+    { className: 'CSE4', c: 3, code: '191' },
+    { className: 'Physics Lab', c: 4, code: '864' },
+];
+
+
+export const colors = [
+    { bg_color: 'bg-pink-100', border_color: 'border-pink-500' },
+    { bg_color: 'bg-teal-100', border_color: 'border-teal-500' },
+    { bg_color: 'bg-slate-100', border_color: 'border-slate-500' },
+    { bg_color: 'bg-cyan-100', border_color: 'border-cyan-500' },
+    { bg_color: 'bg-gray-100', border_color: 'border-gray-500' },
+    { bg_color: 'bg-orange-100', border_color: 'border-orange-500' },
+    { bg_color: 'bg-green-100', border_color: 'border-green-500' },
 ]
 
 export const announcementList = [
