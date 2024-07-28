@@ -14,11 +14,40 @@ export const color = [
 ]
 
 export const ownClasses = [
-    { className: 'CSE1', c: 0, code: '123' },
-    { className: 'CSE2', c: 1, code: '343' },
-    { className: 'CSE3', c: 2, code: '163' },
-    { className: 'CSE4', c: 3, code: '191' },
-    { className: 'Physics Lab', c: 4, code: '864' },
+    {
+        className: 'CSE1', c: 0, code: '123', selectedSubjects: [], subjects: [
+            { name: "Chemistry", color: 4 },
+            { name: "Physics", color: 1 },
+            { name: "English", color: 6 },
+            { name: "Math", color: 0 },
+            { name: "Biology", color: 5 }
+        ], changed: 0
+    },
+    {
+        className: 'CSE2', c: 1, code: '343', selectedSubjects: [], subjects: [
+            { name: "Math", color: 0 },
+            { name: "Biology", color: 5 }
+        ]
+    },
+    {
+        className: 'CSE3', c: 2, code: '163', selectedSubjects: [], subjects: [
+            { name: "Chemistry", color: 4 },
+            { name: "Biology", color: 5 }
+        ]
+    },
+    {
+        className: 'CSE4', c: 3, code: '191', selectedSubjects: [], subjects: [
+            { name: "Chemistry", color: 4 },
+        ]
+    },
+    {
+        className: 'Physics Lab', c: 4, code: '864', selectedSubjects: [], subjects: [
+            { name: "Chemistry", color: 4 },
+            { name: "Physics", color: 1 },
+            { name: "English", color: 6 },
+        ]
+    },
+
 ];
 
 

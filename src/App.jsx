@@ -15,9 +15,11 @@ import Quizes from "./pages/class/Quizes"
 import Signup from "./pages/Signup"
 import Members from "./pages/class/Members"
 import CreateQuiz from "./pages/CreateQuiz"
+import Notification from "./components/basic/Notification"
 
 const App = () => {
   const [pop, setPop] = useState(0);
+  const [notification, setNotification] = useState(false);
 
   return (
     <BrowserRouter>
@@ -45,6 +47,7 @@ const App = () => {
             </>
           </Routes>
         </div>
+        {notification && <Notification setNotification={setNotification} />}
         {pop != 0 && <AddOptionspopUp pop={pop} setPop={setPop} />}
       </div>
     </BrowserRouter>

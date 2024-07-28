@@ -22,7 +22,7 @@ const ModifySubjectDialogBox = ({ subject, subjects, editSubject, setEditSubject
                                     </>
                                 ))
                             }
-                        </div >
+                        </div>
                     </div>
             }
             <div className='text-lg' onClick={() => setEditSubject(true)}><IoMdAdd /></div>
