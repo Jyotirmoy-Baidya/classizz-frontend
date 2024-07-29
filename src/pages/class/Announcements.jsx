@@ -12,7 +12,6 @@ const Announcements = () => {
     const { subject, announcementLists } = useClassContext();
     const [annoucementsToDisplay, setAnnoucementsToDisplay] = useState([]);
     const { id } = useParams();
-    console.log(id);
     useEffect(() => {
         let filteredData = announcementLists;
         if (subject != '') {

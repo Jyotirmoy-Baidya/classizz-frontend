@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 .hide-scrollbar::-webkit-scrollbar {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    display: none;
 }
 
 /* Navbar  */

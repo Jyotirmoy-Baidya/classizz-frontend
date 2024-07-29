@@ -7,7 +7,7 @@ import { AddJoinOptions } from "../../constants";
 import { useLocation } from "react-router-dom";
 
 
-function Header({ setPop }) {
+function Header({ setPop, setNotification }) {
     const [toggle, setToggle] = useState(false);
     const { search, setSearch } = useSearchContext();
     const location = useLocation();
@@ -30,7 +30,7 @@ function Header({ setPop }) {
                         </div>
                     }
                 </button>
-                <div className="notification"><FaRegBell /></div>
+                <div className="notification" onClick={() => setNotification(true)}><FaRegBell /></div>
                 <div className="">
                     <img src="/image.png" alt="profile-pic" className="rounded-full border-[1px] border-black" height={45} width={35} />
                 </div>

@@ -26,7 +26,7 @@ const App = () => {
       <div className="flex h-full w-full fixed top-0 left-0">
         <Navbar />
         <div className="flex flex-col w-full h-full relative overflow-scroll">
-          <Header setPop={setPop} />
+          <Header setPop={setPop} setNotification={setNotification} />
           <Routes>
             <>
               <Route path="/h" element={<HomePage />} >
