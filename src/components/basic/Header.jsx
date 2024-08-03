@@ -39,13 +39,13 @@ function Header({ setPop, setNotification }) {
             </div>
 
             {/* Mobile view */}
-            <div className="flex md:hidden sticky top-0 z-20 w-full px-3 items-center justify-between bg-purple-100 text-black flex-col gap-2">
+            <div className="flex md:hidden sticky top-0 z-20 w-full px-3 items-center justify-between bg-purple-100 text-black flex-col gap-1">
                 <div className='flex mt-3 gap-2 items-center logo'>
                     <img src="/c.jpg" alt='logo' width={40} height={40} />
                     <img src="/name.jpg" alt="name" width={120} height={40} />
                 </div>
-                <div className='flex my-2 h-10 w-full px-2 rounded-full bg-white border-[1px] search-bar'>
-                    <input type="text" className=' rounded-full w-full outline-none' placeholder='Search Here' onChange={(e) => setSearch(e.target.value)} value={search} />
+                <div className='flex my-2 h-10 w-full rounded-full bg-white border-[1px] search-bar'>
+                    <input type="text" className='px-2 rounded-full w-full outline-none' placeholder='Search Here' onChange={(e) => setSearch(e.target.value)} value={search} />
                     <button className='search-btn'><IoSearch /></button>
                 </div>
             </div>
