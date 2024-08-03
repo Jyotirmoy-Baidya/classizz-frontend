@@ -54,17 +54,17 @@ const Navbar = () => {
 
 
             {/* Mobile View  */}
-            <div className='flex justify-between px-6 md:hidden bg-purple-100 h-[4.5rem] z-20 fixed bottom-0 w-screen'>
-                <div className='flex flex-col justify-center items-center'>
-                    <IoIosPeople className='text-4xl' />
+            <div className='flex justify-between text-gray-700 px-6 md:hidden bg-purple-100 h-14 z-20 fixed bottom-0 w-screen'>
+                <div className='flex flex-col justify-center items-center  text-purple-800'>
+                    <IoIosPeople className='text-xl' />
                     <div>Own</div>
                 </div>
                 <div className='flex flex-col justify-center items-center'>
-                    <FaSchool className='text-4xl' />
+                    <FaSchool className='text-xl' />
                     Institute
                 </div>
                 <div className='flex flex-col justify-center items-center'>
-                    <IoSchoolSharp className='text-4xl' />
+                    <IoSchoolSharp className='text-xl' />
                     Class
                 </div>
             </div>
