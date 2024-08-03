@@ -44,7 +44,7 @@ function Header({ setPop, setNotification }) {
                     <img src="/c.jpg" alt='logo' width={40} height={40} />
                     <img src="/name.jpg" alt="name" width={120} height={40} />
                 </div>
-                <div className='flex my-2 h-10 w-full rounded-full bg-white border-[1px] search-bar'>
+                <div className='flex my-2 h-10 w-full ps-1 pe-2 rounded-full bg-white border-[1px] search-bar'>
                     <input type="text" className='px-2 rounded-full w-full outline-none' placeholder='Search Here' onChange={(e) => setSearch(e.target.value)} value={search} />
                     <button className='search-btn'><IoSearch /></button>
                 </div>
