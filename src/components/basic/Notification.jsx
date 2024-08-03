@@ -67,13 +67,13 @@ const Notifications = [
     }
 ]
 
-const Notification = () => {
+const Notification = ({ setNotification }) => {
     return (
         <div className='absolute top-0 left-0 z-20 h-screen w-screen bg-cyan-800 bg-opacity-45'>
             <div className='cursor-pointer bg-white z-20 absolute h-5/6 w-1/4 rounded-md top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 flex flex-col'>
                 <div className='px-4 py-3 flex items-center justify-between'>
                     <p className='text-2xl font-medium text-cyan-800'>Notifications</p>
-                    <GiCrossMark className='text-cyan-500' />
+                    <GiCrossMark className='text-cyan-500' onClick={() => setNotification(false)} />
                 </div>
                 <hr className='border-cyan-500' />
                 <div className='grow w-full pt-2 flex flex-col gap-1 px-3 overflow-scroll hide-scrollbar'>

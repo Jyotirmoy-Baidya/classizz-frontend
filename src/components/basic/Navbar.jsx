@@ -9,11 +9,13 @@ const ClassNavItems = [{ name: "Announcements", href: "/cls/a" }, { name: "Notes
 const QuizNavItems = [{ name: "Create Quiz", href: "/createquiz" }]
 const StudentAddClass = [{ name: "Join Class" }]
 
+const ProfileNavItems = [{ name: "My Profile", href: "/profile" }]
+
 const Navbar = () => {
     const location = useLocation();
     const navSelection = location.pathname.split('/')[1];
     return (
-        <div className='w-[24%] left-0 h-screen max-h-screen bg-purple-100 text-black flex flex-col gap-10'>
+        <div className='hidden md:flex w-[24%] left-0 h-screen max-h-screen bg-purple-100 text-black flex-col gap-10'>
             <div className='flex m-4 gap-2 items-center logo'>
                 <img src="/c.jpg" alt='logo' width={40} height={40} />
                 <img src="/name.jpg" alt="name" width={120} height={40} />
@@ -35,7 +37,12 @@ const Navbar = () => {
                                     <NavButtons href={ele.href} name={ele.name} key={i} type={"Class"} />
                                 ))
                             ) :
-                                <></>
+                                navSelection === 'profile' ? (
+                                    ProfileNavItems.map((ele, i) => (
+                                        <NavButtons href={ele.href} name={ele.name} key={i} type={"Class"} />
+                                    ))
+                                ) :
+                                    <></>
                 }
             </div>
         </div >

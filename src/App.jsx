@@ -16,6 +16,7 @@ import Signup from "./pages/Signup"
 import Members from "./pages/class/Members"
 import CreateQuiz from "./pages/CreateQuiz"
 import Notification from "./components/basic/Notification"
+import Profile from "./pages/Profile"
 
 const App = () => {
   const [pop, setPop] = useState(0);
@@ -44,6 +45,7 @@ const App = () => {
               </Route>
               <Route path="*" element={<Revert />} />
               <Route path='/signup' element={<Signup />} />
+              <Route path='/profile' element={<Profile />} />
             </>
           </Routes>
         </div>

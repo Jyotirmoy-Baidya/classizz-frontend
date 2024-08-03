@@ -21,7 +21,7 @@ export const ownClasses = [
             { name: "English", color: 6 },
             { name: "Math", color: 0 },
             { name: "Biology", color: 5 }
-        ], changed: 0
+        ],
     },
     {
         className: 'CSE2', c: 1, code: '343', selectedSubjects: [], subjects: [
