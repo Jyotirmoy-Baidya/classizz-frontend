@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react'
-import { useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import NavButtons from './NavButtons';
 import { useNavContext } from '../../context/NavContext';
 import { useClassContext } from '../../context/ClassContext';
@@ -7,7 +7,7 @@ import { BiSolidInstitution } from 'react-icons/bi';
 import { FaSchool } from 'react-icons/fa';
 import { IoIosPeople } from 'react-icons/io';
 import { IoSchoolSharp } from 'react-icons/io5';
-const HomeNavItems = [{ name: "OwnClasses", href: "/h/o" }, { name: "Institutes", href: "/h/s" }, { name: "Joined", href: "/h/e" }];
+const HomeNavItems = [{ name: "Own", href: "/h/o", icon: <IoIosPeople /> }, { name: "Institutes", href: "/h/s", icon: <FaSchool /> }, { name: "Class", href: "/h/e", icon: <IoSchoolSharp /> }];
 const ClassNavItems = [{ name: "Announcements", href: "/cls/a" }, { name: "Notes", href: "/cls/n" }, { name: "Quiz", href: '/cls/q' }, { name: "Members", href: "cls/m" }];
 
 const QuizNavItems = [{ name: "Create Quiz", href: "/createquiz" }]
@@ -55,18 +55,15 @@ const Navbar = () => {
 
             {/* Mobile View  */}
             <div className='flex justify-between text-gray-700 px-6 md:hidden bg-purple-100 h-14 z-20 fixed bottom-0 w-screen'>
-                <div className='flex flex-col justify-center items-center  text-purple-800'>
-                    <IoIosPeople className='text-xl' />
-                    <div>Own</div>
-                </div>
-                <div className='flex flex-col justify-center items-center'>
-                    <FaSchool className='text-xl' />
-                    Institute
-                </div>
-                <div className='flex flex-col justify-center items-center'>
-                    <IoSchoolSharp className='text-xl' />
-                    Class
-                </div>
+                {
+                    HomeNavItems.map((ele, i) => (
+                        <NavLink to={ele.href} className={`flex flex-col justify-center items-center  ${location.pathname.includes(ele.href) ? "text-purple-700" : ""}`}>
+                            {ele.icon}
+                            <div>{ele.name}</div>
+                        </NavLink>
+                    ))
+                }
+
             </div>
 
         </>
