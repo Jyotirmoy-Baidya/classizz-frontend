@@ -30,7 +30,7 @@ const App = () => {
           <Header setPop={setPop} setNotification={setNotification} />
           <Routes>
             <>
-              <Route path="/" element={<Revert />} />
+              <Route path="/" element={<HomePage />} />
               <Route path="/h" element={<HomePage />} >
                 <Route path="o" element={<OwnClasses />} />
                 <Route path="s" element={<JoinedInsititutes />} />
