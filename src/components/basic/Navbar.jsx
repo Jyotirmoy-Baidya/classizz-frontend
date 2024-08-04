@@ -58,8 +58,8 @@ const Navbar = () => {
                 {
                     HomeNavItems.map((ele, i) => (
                         <NavLink to={ele.href} className={`flex flex-col justify-center items-center  ${location.pathname.includes(ele.href) ? "text-purple-700" : ""}`}>
-                            {ele.icon}
-                            <div>{ele.name}</div>
+                            <div className='text-2xl'>{ele.icon}</div>
+                            <div className='text-xs'>{ele.name}</div>
                         </NavLink>
                     ))
                 }
