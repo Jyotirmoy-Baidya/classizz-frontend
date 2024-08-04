@@ -24,9 +24,9 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div className="pb-16 md:pb-0 flex h-full w-full fixed top-0 left-0">
+      <div className="flex h-screen">
         <Navbar />
-        <div className="flex flex-col w-full h-full relative overflow-scroll">
+        <div className="md:ps-[16rem] flex flex-col w-full relative">
           <Header setPop={setPop} setNotification={setNotification} />
           <Routes>
             <>

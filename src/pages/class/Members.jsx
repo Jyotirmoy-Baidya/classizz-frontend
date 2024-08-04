@@ -3,8 +3,12 @@ import { color, students, teachers } from '../../constants'
 
 const Members = () => {
     return (
-        <div className='p-4 grid grid-cols-2 gap-4 h-full'>
-            <div className='h-full px-2 border-r-2 students-list'>
+        <div className='px-2 md:p-4 grid grid-cols-1 md:grid-cols-2 gap-4 h-full'>
+
+            {/* Students  */}
+
+            <hr className='md:hidden block border-cyan-950 order-2 border-dashed ' />
+            <div className='h-full px-2 border-r-2 md:order-1 order-3 students-list '>
                 <div className='text-xl font-medium text-purple-900  '>Students</div>
                 <div className='flex flex-col pt-2 gap-2'>
                     {
@@ -25,7 +29,8 @@ const Members = () => {
                     }
                 </div>
             </div>
-            <div className='h-full px-2 teachers-list'>
+            {/* Teachers  */}
+            <div className='h-full px-2 md:order-2 order-1 teachers-list'>
                 <div className='text-xl font-medium text-violet-900'>Teachers</div>
                 <div className='flex flex-col pt-2 gap-2'>
                     {

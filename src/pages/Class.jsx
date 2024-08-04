@@ -9,7 +9,7 @@ const Class = () => {
     const [dropdown, setDropdown] = useState(false);
     return (
         <>
-            <div className='sticky top-[6.8rem] md:top-20 bg-white z-10 flex w-full p-2 md:p-4 justify-between items-center border-b-[1px] border-slate-300 min-h-[72px]'>
+            <div className='fixed top-[7.5rem] md:top-20 bg-white z-10 flex w-full p-2 md:p-4 justify-between items-center border-b-[1px] border-slate-300 h-[4.5rem]'>
                 <h1 className='flex items-center gap-2 font-bold tracking-wide text-3xl  md:text-4xl'><NavLink to="/h/o" className='pt-1 text-2xl md:text-3xl text-purple-700' ><IoMdHome /></NavLink> {classData.name}</h1>
                 {/* <div className='absolute w-36 h-32 top-4 right-4 text-sm md:text-base'> */}
                 <div className={`absolute top-[18px] md:top-4  right-4 w-28 md:w-36 flex flex-col cursor-pointer rounded z-10 text-sm md:text-base class-dropdown ${dropdown ? 'active' : ""} `} >
@@ -40,7 +40,9 @@ const Class = () => {
                 </div>
                 {/* </div> */}
             </div >
-            <Outlet />
+            <div className='pt-[12rem] pb-[6rem] md:pb-0 md:pt-[9.5rem] '>
+                <Outlet />
+            </div>
         </>
     )
 }

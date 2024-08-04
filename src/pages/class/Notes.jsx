@@ -10,7 +10,7 @@ const Notes = () => {
     const { subject } = useClassContext();
     const { search } = useSearchContext();
     return (
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6 h-full p-4 justify-center'>
+        <div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 h-full p-4 justify-center'>
             {
                 notes.map((ele, i) => {
                     if (subject == "" || ele.subject == subject) {

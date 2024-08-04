@@ -14,7 +14,7 @@ function Header({ setPop, setNotification }) {
     return (
         <>
 
-            <div className="hidden md:flex sticky top-0 z-20 w-full min-h-20 max-h-20 px-3 items-center justify-between bg-purple-100 text-black">
+            <div className="hidden md:flex fixed top-0 z-20 w-full h-20 px-3 items-center justify-between bg-purple-100 text-black">
                 <div className='flex h-10 w-72 bg-gray-50 px-2 rounded border-[1px] search-bar'>
                     <input type="text" className='h-full rounded w-full outline-none bg-gray-50' placeholder='Search Here' onChange={(e) => setSearch(e.target.value)} value={search} />
                     <button className='search-btn'><IoSearch /></button>
@@ -39,7 +39,7 @@ function Header({ setPop, setNotification }) {
             </div>
 
             {/* Mobile view */}
-            <div className="flex md:hidden sticky top-0 z-20 w-full px-3 items-center justify-between bg-purple-100 text-black flex-col gap-1">
+            <div className="flex md:hidden fixed h-[7.8rem] top-0 z-20 w-full px-3 items-center justify-between bg-purple-100 text-black flex-col gap-1">
                 <div className='flex mt-3 gap-2 items-center logo'>
                     <img src="/c.jpg" alt='logo' width={40} height={40} />
                     <img src="/name.jpg" alt="name" width={120} height={40} />

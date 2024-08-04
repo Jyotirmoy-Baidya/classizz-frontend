@@ -108,7 +108,7 @@
 
 /* Quiz  */
 .quiz-block {
-    border-radius: 3rem;
+    /* border-radius: 3rem; */
     margin-right: 1.25rem;
     transition: all 0.5s;
 }
@@ -132,7 +132,7 @@
     position: absolute;
     top: 0;
     left: -94.5%;
-    border-radius: inherit;
+    /* border-radius: inherit; */
     transition: 1s;
 }
 

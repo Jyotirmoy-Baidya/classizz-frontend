@@ -24,7 +24,7 @@ const Navbar = () => {
     const navSelection = location.pathname.split('/')[1];
     return (
         <>
-            <div className='hidden md:flex w-[24%] left-0 h-screen max-h-screen bg-purple-100 text-black flex-col gap-10'>
+            <div className='fixed z-20 hidden md:flex w-[16rem] left-0 h-screen max-h-screen bg-purple-100 text-black flex-col gap-10'>
                 <div className='flex m-4 gap-2 items-center logo'>
                     <img src="/c.jpg" alt='logo' width={40} height={40} />
                     <img src="/name.jpg" alt="name" width={120} height={40} />
