@@ -54,10 +54,10 @@ const Navbar = () => {
 
 
             {/* Mobile View  */}
-            <div className='flex justify-between text-gray-700 px-6 md:hidden bg-purple-100 h-14 z-20 fixed bottom-0 w-screen'>
+            <div className='flex justify-between text-gray-700 px-10 md:hidden bg-purple-100 h-14 z-20 fixed bottom-0 w-screen'>
                 {
                     HomeNavItems.map((ele, i) => (
-                        <NavLink to={ele.href} className={`flex flex-col justify-center items-center  ${location.pathname.includes(ele.href) ? "text-purple-700" : ""}`}>
+                        <NavLink to={ele.href} key={i} className={`flex flex-col justify-center items-center  ${location.pathname.includes(ele.href) ? "text-purple-700" : ""}`}>
                             <div className='text-2xl'>{ele.icon}</div>
                             <div className='text-xs'>{ele.name}</div>
                         </NavLink>

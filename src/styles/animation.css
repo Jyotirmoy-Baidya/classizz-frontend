@@ -1,25 +1,18 @@
 /* DropDown Animation  */
 .class-dropdown-items {
-    transition: 0.5s;
-}
-
-.class-dropdown-items div {
-    position: relative;
-    width: 100%;
-    left: 100%;
+    position: absolute;
+    top: -100%;
     display: flex;
-    background-color: white;
     border-radius: 3px;
-    padding: 10px 15px;
-    z-index: 1;
+    z-index: 0;
     border-radius: 3px;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 1s;
     cursor: pointer;
 }
 
-.class-dropdown.active .class-dropdown-items div {
-    left: 0%;
+.class-dropdown.active .class-dropdown-items {
+    top: 0%;
 }
 
 .class-dropdown-items div span {
@@ -29,7 +22,7 @@
     width: 100%;
     border-radius: inherit;
     height: 100%;
-    background-color: rgb(216 180 254);
+    background-color: rgb(233 213 255);
     z-index: -1;
     transform: rotate(-160deg);
     transform-origin: right;
