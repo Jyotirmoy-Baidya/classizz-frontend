@@ -39,7 +39,7 @@ function Header({ setPop, setNotification }) {
             </div>
 
             {/* Mobile view */}
-            <div className="flex md:hidden fixed h-[7.8rem] top-0 z-20 w-full px-3 items-center justify-between bg-purple-100 text-black flex-col gap-1">
+            <div className="flex md:hidden fixed h-[7rem] top-0 z-20 w-full px-3 items-center justify-between bg-purple-100 text-black flex-col gap-1">
                 <div className='flex mt-3 gap-2 items-center logo'>
                     <img src="/c.jpg" alt='logo' width={40} height={40} />
                     <img src="/name.jpg" alt="name" width={120} height={40} />
