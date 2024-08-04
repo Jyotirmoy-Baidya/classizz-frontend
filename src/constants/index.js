@@ -213,6 +213,12 @@ export const quizes = [
         "quizName": "Math Basics",
         "subjects": [
             { name: "Geography", color: 5 },
+            { name: "Chemistry", color: 4 },
+            { name: "Physics", color: 1 },
+            { name: "Art", color: 6 },
+            { name: "Chemistry", color: 4 },
+            { name: "Physics", color: 1 },
+            { name: "Art", color: 6 }
         ],
         "totalMarks": 100
     },
@@ -220,6 +226,9 @@ export const quizes = [
         "quizId": 2,
         "quizName": "World History",
         "subjects": [
+            { name: "Chemistry", color: 4 },
+            { name: "Physics", color: 1 },
+            { name: "Art", color: 6 },
             { name: "Chemistry", color: 4 },
             { name: "Physics", color: 1 },
             { name: "Art", color: 6 }

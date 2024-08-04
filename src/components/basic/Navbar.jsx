@@ -58,7 +58,7 @@ const Navbar = () => {
 
 
             {/* Mobile View  */}
-            <div className='flex justify-between text-gray-700 px-10 md:hidden bg-purple-100 h-14 z-20 fixed bottom-0 w-screen'>
+            <div className='flex justify-between text-gray-700 px-8 md:hidden bg-purple-100 h-14 z-20 fixed bottom-0 w-screen'>
                 {
                     navSelection === 'h' ? (
                         HomeNavItems.map((ele, i) => (

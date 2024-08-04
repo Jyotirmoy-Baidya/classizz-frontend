@@ -16,23 +16,26 @@ const Quizes = () => {
 
     return (
         <>
-            <div className={`grid grid-cols-2 gap-5 p-5 pr-0 z-[2] quizes-list`}>
+            <div className={`grid grid-cols-1 md:grid-cols-2 gap-5 p-5 pr-0 z-[2] quizes-list`}>
                 <NavLink to='/createquiz' className='absolute cursor-pointer border-yellow-600 border-4 bottom-6 right-6 rounded bg-yellow-400 py-3 px-4 shadow'>Create Quiz</NavLink>
                 {
                     quizes.map((ele, i) => {
                         if (ele.quizName.toLowerCase().includes(search.toLowerCase()))
                             return (
-                                <div className={`p-3 ps-8 h-14 cursor-pointer flex gap-4 items-center rounded-md border-[3px] border-slate-200 relative quiz-block ${active === i + 1 && 'shadow-lg active z-30'} ${i == 0 && 'quiz-live'} overflow-hidden`} onClick={() => { setActive(i + 1); setQuizPop(true) }}>
+                                <div className={`ps-6 md:ps-10 h-fit min-h-14 cursor-pointer grid grid-cols-10 gap-4 items-center rounded-md border-[3px] border-slate-200 relative quiz-block ${active === i + 1 && 'shadow-lg active z-30'} ${i == 0 && 'quiz-live'} overflow-hidden`} onClick={() => { setActive(i + 1); setQuizPop(true) }}>
                                     <span className='quiz-block-span'>
                                         <div className='absolute top-1/2 -translate-y-2 '><FaChevronRight /></div>
                                     </span>
-                                    <div className='text-lg'>{ele.quizName}</div>
-                                    {
-                                        ele.subjects?.map((sub, i) => (
-                                            <SubjectBlock sub={sub} />
-                                        ))
-                                    }
-                                    <div className='ms-auto text-sm me-4'>Total marks: {ele.totalMarks}</div>
+                                    <div className='col-span-3 md:col-span-4 text-sm md:text-base'>{ele.quizName}</div>
+                                    <div className='col-span-5 border border-cyan-300 py-1 px-1 rounded md:col-span-4 flex items-center gap-2 overflow-x-scroll hide-scrollbar'>
+                                        <div className='text-[0.5rem] md:text-xs'>Subjects({ele.subjects.length}):</div>
+                                        {
+                                            ele.subjects?.map((sub, i) => (
+                                                <SubjectBlock sub={sub} key={i} />
+                                            ))
+                                        }
+                                    </div>
+                                    <div className='ms-auto flex flex-col items-center col-span-2 text-[0.5rem] md:text-xs me-3'>Total marks<div className='font-bold text-sm'>{ele.totalMarks}</div></div>
                                 </div>
                             )
                     })
