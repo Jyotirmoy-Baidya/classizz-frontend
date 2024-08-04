@@ -33,7 +33,7 @@ const Announcements = () => {
                             <div className='absolute top-[10px] font-sans text-slate-600 px-2 left-3 bg-white text-sm date'>{daysOfWeek[(new Date(ele.date)).getDay()]} {reverseDateFormat(ele.date)}</div>
                         </div>
                         {/* sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 */}
-                        <div className='px-3 grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 annoucements'>
+                        <div className='px-3 grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-center annoucements'>
                             {/* min-w-64 max-w-72 */}
                             {
                                 ele.announcements.map((notice, i) => (

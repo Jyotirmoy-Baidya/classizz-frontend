@@ -10,7 +10,7 @@ const Class = () => {
     return (
         <>
             <div className='sticky top-[6.8rem] md:top-20 bg-white z-10 flex w-full p-4 justify-between items-center border-b-[1px] border-slate-300 min-h-[72px]'>
-                <h1 className='flex items-center gap-2 font-semibold tracking-wide  text-4xl'><NavLink to="/h/o" className='text-3xl text-purple-700' ><IoMdHome /></NavLink> {classData.name}</h1>
+                <h1 className='flex items-center gap-2 font-semibold tracking-wide text-xl  md:text-4xl'><NavLink to="/h/o" className='text-lg md:text-3xl text-purple-700' ><IoMdHome /></NavLink> {classData.name}</h1>
                 <div className='absolute w-36 h-32 top-4 right-4'>
                     <div className={`w-36 flex flex-col  cursor-pointer rounded z-10 class-dropdown ${dropdown ? 'active' : ""} `} >
                         <div className='bg-purple-200 flex gap-2 rounded border border-purple-400 w-full z-10 px-4 py-2 items-center justify-between'>
